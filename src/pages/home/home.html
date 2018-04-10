@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Shiva
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="main-body">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      {{song.name}}
+      <br>
+      <iframe [src]=" song.uri | safedom: 'https://open.spotify.com/embed?uri='"
+                           width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                           
+    </div>
+  </div>
+</div>
+
+</ion-content>
