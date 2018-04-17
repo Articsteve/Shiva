@@ -7,7 +7,7 @@ export class SpotifyService {
 
   artistsArr: any[] = [];
   spotifyUrl: string = 'https://api.spotify.com/v1/';
-  token:string = 'BQDRfvsdjF7PDQAWxVdxcID0gD_YOwjolOUGg2TiGTNjNq5Zl04ATTutvGmIYMQy6Vc0TBxXHg0KgJLdcTo';
+  token:string = 'BQDjiYi6PWbBQzONnuw_qLy9DmR26C8oa4GYo9gGCx2-H_ion5jtuCGafsqzOofUKSdtGiaWGbPt8O5LA5Y';
 
   constructor( public http:HttpClient ) {
   }

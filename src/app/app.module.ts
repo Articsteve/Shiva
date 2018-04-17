@@ -5,14 +5,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http';
 
+
 //Services
 import { SpotifyService } from './services/spotify.service';
 
+//Components
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { TabsPage } from '../pages/tabs/tabs';
+import { DetailComponent } from '../pages/details/details.component';
+import { LandingpageComponent } from '../pages/landingpage/landingpage';
 
 //Pipes
-
 import { NopicPipe } from './pipes/nopic.pipe';
 import { SafedomPipe } from './pipes/safedom.pipe';
 
@@ -22,8 +26,11 @@ import { SafedomPipe } from './pipes/safedom.pipe';
     MyApp,
     NopicPipe,
     SafedomPipe,
-    HomePage
-  ],
+    HomePage,
+    TabsPage,
+    DetailComponent,
+    LandingpageComponent
+    ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -32,7 +39,10 @@ import { SafedomPipe } from './pipes/safedom.pipe';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    TabsPage,
+    DetailComponent,
+    LandingpageComponent
   ],
   providers: [
     SpotifyService,
